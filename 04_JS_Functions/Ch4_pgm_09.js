@@ -1,6 +1,14 @@
 // Using a function to display object properties
 
+var movie1;
 var showMovieInfo;
+var movie;
+
+movie1 = {
+    title: "Inside Out",
+    actors: "Amy Poehler, Bill Hader",
+    directors: "Pete Doctor, Ronaldo Del Carmen"
+};
 
 showMovieInfo = function () {
     console.log("Movie information for " + movie.title);
@@ -9,14 +17,13 @@ showMovieInfo = function () {
     console.log("Directors: " + movie.directors);
     console.log("------------------------------");
 };
-var movie;
-movie = {};
-movie.title = "Inception";
-movie.actors = "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page";
-movie.directors = "Christopher Nolan";
-
+var movie2 = {};
+movie = movie2;
+movie2.title = "Vikram";
+movie2.actors = "Kamal Hassan";
+movie2.directors = "Lokesh Kanagaraj";
+movie = movie2;
 showMovieInfo(); 
-
 /* Further Adventures
  *
  * 1) Add a call to showMovieInfo and run the program.
