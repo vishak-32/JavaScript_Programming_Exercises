@@ -1,40 +1,46 @@
 // Using the same function with multiple objects
 
-var sale1;
-var sale2;
-var sale3;
-var sale;
-var calculateTax;
-var displaySale;
-var calculateAndDisplayTax;
+var player1;
+var player2;
+var player;
+var showPlayerInfo;
+var showPlayerHealth;
+var showPlayerPlace;
 
-sale1 = { price: 140, taxRate: 15 };
-sale2 = { price: 40, taxRate: 10 };
-sale3 = { price: 120, taxRate: 20 };
-sale4 = { price: 200, taxRate: 18 };
-
-calculateAndDisplayTax = function () {
-    sale.tax = sale.price * sale.taxRate / 100;
-    sale.total = sale.price + sale.tax;
-    
-    console.log("price = $" + sale.price);
-    console.log("tax @ " + sale.taxRate + "% = $" + sale.tax);
-    console.log("total cost = $" + sale.total);
-    console.log("------------------------------"); 
+player1 = {
+    name: "Kandra",
+    place: "The Dungeon of Doom",
+    health: 50
 };
 
-sale = sale1;
-calculateAndDisplayTax();
+player2 = {
+    name: "Dax",
+    place: "The Old Library",
+    health: 40
+};
 
-sale = sale2;
-calculateAndDisplayTax();
+showPlayerInfo = function () {
+    console.log(player.name);
+    console.log("------------------------------");
+    console.log(player.name + " is in " + player.place);
+    console.log(player.name + " has health " + player.health);
+    console.log("------------------------------");
+    console.log("");
+};
 
-sale = sale3;
-calculateAndDisplayTax();
+player = player1;
+showPlayerInfo();
 
-sale = sale4;
-calculateAndDisplayTax();
+player = player2;
+showPlayerInfo();
 
+showPlayerPlace = function () {
+    console.log(player.name + " is in " + player.place);
+};
+
+showPlayerHealth = function () {
+    console.log(player.name + " has health " + player.health);
+};
 
 /* Further Adventures
  *
