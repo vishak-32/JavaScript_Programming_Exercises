@@ -1,5 +1,6 @@
 // A question and answer for a quiz app
 
+
 var questionAndAnswer = {
 	question: "What is the capital of France?",
 	answer1: "Bordeaux",
@@ -9,6 +10,12 @@ var questionAndAnswer = {
 	correctAnswer: "Paris",
 	marksForQuestion: 2
 };
+
+console.log(questionAndAnswer.question);
+console.log("1. " + questionAndAnswer.answer1);
+console.log("2. " + questionAndAnswer.answer2);
+console.log("3. " + questionAndAnswer.answer3);
+console.log("4. " + questionAndAnswer.answer4);
 
 
 
