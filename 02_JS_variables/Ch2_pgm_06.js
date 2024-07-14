@@ -1,13 +1,13 @@
 // Declaring and assigning in two steps
-
 var playerName;
 var locationName;
+var score;
 
 playerName = "Lionel Messi";
 locationName = "Argentina";
+score=120;
 
-console.log(playerName + " is in " + locationName);
-
+console.log(playerName + " is in " + locationName+" has a  score of "+score );
 
 
 /* Further Adventures
