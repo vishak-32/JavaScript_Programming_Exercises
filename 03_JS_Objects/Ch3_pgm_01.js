@@ -11,7 +11,7 @@ console.log(bookTitle + " by " + bookAuthor);
 var bookTitle1;
 var bookAuthor1;
 
-bookTitle1="To Kill a Mockingbird;
+bookTitle1="To Kill a Mockingbird";
 bookAuthor1="Harper Lee";
 
 console.log(bookTitle1+" by "+bookAuthor1);
