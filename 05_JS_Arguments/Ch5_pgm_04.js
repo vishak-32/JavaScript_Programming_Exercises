@@ -10,6 +10,10 @@ showMessage("It's full of stars!");
 showMessage("Hello to Jason Isaacs");
 showMessage("Hello to Jason Isaacs and Stephen Fry");
 
+var myMessage = "This is a new message";
+
+showMessage(myMessage);
+
 
 
 /* Further Adventures
