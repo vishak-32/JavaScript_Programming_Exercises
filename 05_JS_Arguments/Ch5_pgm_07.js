@@ -1,14 +1,16 @@
 // Displaying a player's name
 
+
 var showPlayerName;
 
 showPlayerName = function (playerName) {
     console.log(playerName);
+    console.log("The name has " + playerName.length + " letters.");
+
 };
 
 showPlayerName("Kandra");
 showPlayerName("Dax");
-
 
 
 /* Further Adventures
