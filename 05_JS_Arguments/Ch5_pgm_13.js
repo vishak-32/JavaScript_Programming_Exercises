@@ -1,48 +1,48 @@
 // Displaying a player's information
 
-var showPlayerInfo;
-var showPlayerName;
-var showPlayerHealth;
-var showPlayerPlace;
-var showLine;
-var showBlankLine;
-
-showPlayerName = function (playerName) {
+var showPlayerName = function (playerName) {
     console.log(playerName);
 };
 
-showPlayerHealth = function (playerName, playerHealth) {
+var showPlayerHealth = function (playerName, playerHealth) {
     console.log(playerName + " has health " + playerHealth);
 };
 
-showPlayerPlace = function (playerName, playerPlace) {
+var showPlayerPlace = function (playerName, playerPlace) {
     console.log(playerName + " is in " + playerPlace);
 };
 
-showLine = function () {
-    console.log("----------------------------");
+var showLine = function (length, char = '-') {
+    var line = new Array(length + 1).join(char);
+    console.log(line);
 };
 
-showBlankLine = function () {
-    console.log("");
-};
+var showPlayerInfo = function (playerName, playerPlace, playerHealth) {
+    showLine(10, '*');
+    console.log('* ' + playerName + ' *');
+    showLine(10, '*');
 
-showPlayerInfo = function (playerName, playerPlace, playerHealth) {
-    showBlankLine();
-
-    showPlayerName(playerName);
-
-    showLine();
-
+    showLine(30);
     showPlayerPlace(playerName, playerPlace);
     showPlayerHealth(playerName, playerHealth);
-
-    showLine();
-    showBlankLine();
+    showLine(30);
 };
 
-showPlayerInfo("Kandra", "The Dungeon of Doom", 50);
-showPlayerInfo("Dax", "The Old Library", 40);
+var player1 = {
+    name: "Kandra",
+    place: "The Dungeon of Doom",
+    health: 50
+};
+
+var player2 = {
+    name: "Dax",
+    place: "The Old Library",
+    health: 40
+};
+
+showPlayerInfo(player1.name, player1.place, player1.health);
+showPlayerInfo(player2.name, player2.place, player2.health);
+
 
 
 /* Further Adventures
