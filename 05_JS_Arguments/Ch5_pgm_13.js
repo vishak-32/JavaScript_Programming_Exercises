@@ -1,47 +1,48 @@
 // Displaying a player's information
 
-var showPlayerName = function (playerName) {
+var showPlayerInfo;
+var showPlayerName;
+var showPlayerHealth;
+var showPlayerPlace;
+var showLine;
+var showBlankLine;
+
+showPlayerName = function (playerName) {
     console.log(playerName);
 };
 
-var showPlayerHealth = function (playerName, playerHealth) {
+showPlayerHealth = function (playerName, playerHealth) {
     console.log(playerName + " has health " + playerHealth);
 };
 
-var showPlayerPlace = function (playerName, playerPlace) {
+showPlayerPlace = function (playerName, playerPlace) {
     console.log(playerName + " is in " + playerPlace);
 };
 
-var showLine = function (length, char = '-') {
-    var line = new Array(length + 1).join(char);
-    console.log(line);
+showLine = function () {
+    console.log("----------------------------");
 };
 
-var showPlayerInfo = function (playerName, playerPlace, playerHealth) {
-    showLine(10, '*');
-    console.log('* ' + playerName + ' *');
-    showLine(10, '*');
+showBlankLine = function () {
+    console.log("");
+};
 
-    showLine(30);
+showPlayerInfo = function (playerName, playerPlace, playerHealth) {
+    showBlankLine();
+
+    showPlayerName(playerName);
+
+    showLine();
+
     showPlayerPlace(playerName, playerPlace);
     showPlayerHealth(playerName, playerHealth);
-    showLine(30);
+
+    showLine();
+    showBlankLine();
 };
 
-var player1 = {
-    name: "Kandra",
-    place: "The Dungeon of Doom",
-    health: 50
-};
-
-var player2 = {
-    name: "Dax",
-    place: "The Old Library",
-    health: 40
-};
-
-showPlayerInfo(player1.name, player1.place, player1.health);
-showPlayerInfo(player2.name, player2.place, player2.health);
+showPlayerInfo("Kandra", "The Dungeon of Doom", 50);
+showPlayerInfo("Dax", "The Old Library", 40);
 
 
 
