@@ -50,7 +50,6 @@ console.log(getCarInfo(car2));
 
 
 
-
 /* Further Adventures
  *
  * 1) Write a similar program to create and
