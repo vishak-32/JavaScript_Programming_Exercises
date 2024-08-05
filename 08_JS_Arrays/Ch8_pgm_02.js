@@ -12,6 +12,7 @@ console.log(nextYear);
 
 
 
+
 /* Further Adventures
  *
  * 1) Add place1 to the nextYear array.
